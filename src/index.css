@@ -1,0 +1,179 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+.con{
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.t{
+    transition: 0.5s;
+}
+
+/* Sec => Home */
+#Home{
+    background-image: url("../imges/Home.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+/* Sec => Home */
+
+/*  Sec => About  */
+#About{
+    background-color: #22c55e;
+    padding-top: 50px;
+    letter-spacing: 0.2em;
+}
+
+#About h1{
+    font-size: 62px;
+    color: white;
+}
+
+#About hr{
+    margin: 0 auto;
+    width: 50%;
+}
+
+#About .p{
+    padding: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#About #num{
+    padding-top: 83px;
+    justify-content: center;
+    gap: 45px;
+    font-size: 23px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+#About #num h3{
+    font-size: 33px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*  Sec => About  */
+
+/*  Sec => srv */
+#Services {
+    padding-top: 107px;
+}
+
+#Services #Content p{
+    color: #22c55e;
+}
+
+#Services #Content h1{
+    font-size: 42px;
+    width: 49%;
+    margin: auto;
+}
+
+#Services hr{
+    margin: 0 auto;
+    width: 50%;
+}
+
+#Services #ser{
+    justify-content: space-around;
+    padding-top: 28px;
+}
+
+#Services #ser #one{
+    gap: 10px;
+    font-size: 23px;
+}
+
+@media (max-width: 767px) {
+    #Services #ser{
+        display: block;
+    }  
+}
+
+@media (max-width: 800px) {
+    #Services #ser{
+        display: block;
+    }  
+}
+
+@media (max-width: 942px) {
+    #Services #ser{
+        display: block;
+    }  
+}
+
+#Services #ser #one div{
+    width: 470px;
+    height: 307px;
+    position: relative;
+    border-radius: 41px;
+}
+
+#Services #ser #one div p{
+    padding-left: 32px;
+    color: darkgrey;
+}
+
+#Services #ser #one div i{
+    color: #22c55e;
+    font-size: 40px;
+}
+
+/*  Sec => srv */
+
+/*  Sec => Content */
+
+#Clients{
+    padding-top: 107px;
+}
+
+#Clients hr{
+    margin: 0 auto;
+    width: 50%;
+}
+
+#Clients #Content p{
+    color: #22c55e;
+}
+
+#Clients #Content h1{
+    font-size: 42px;
+    width: 49%;
+    margin: auto;
+}
+
+#Clients #ser{
+    justify-content: space-around;
+    padding-top: 28px;
+}
+
+#Clients #ser #one{
+    font-size: 23px;
+}
+
+#Clients #ser #one div{
+    width: 470px;
+    height: 307px;
+    position: relative;
+    border-radius: 41px;
+    margin-top: 30px;
+}
+
+#Clients #ser #one div p{
+    padding-left: 32px;
+}
+
+
+
+/*  Sec => Content */
