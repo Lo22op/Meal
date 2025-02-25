@@ -1,0 +1,152 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+}
+.con{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.t{
+    transition: 0.8s;
+}
+input{
+   background-color: #ffa5004f;
+   border-radius: 24px;
+   color: black;
+   padding: 5px;
+   margin: 5px;
+   outline: navajowhite;
+   transition: 0.5s;
+}
+input:hover{
+    background-color: darkgrey;
+    color: white;
+    border-radius: 2px;
+    margin: 6px;
+}
+textarea{
+    background-color: #ffa5004f;
+    border-radius: 24px;
+    color: black;
+    padding: 5px;
+    margin: 5px;
+    outline: navajowhite;
+    transition: 0.5s;
+}
+textarea:hover{
+    background-color: darkgrey;
+    color: white;
+    border-radius: 2px;
+    margin: 6px;
+}
+select{
+    background-color: #ffa5004f;
+    border-radius: 24px;
+    color: black;
+    padding: 5px;
+    margin: 5px;
+    outline: navajowhite;
+    transition: 0.5s;
+}
+label{
+    color: #ffa700;
+    font-size: 20px;
+    font-weight: bold;
+}
+label:hover{
+    color: rgb(139, 110, 12);
+}
+button{
+    background-color: #ffa5004f;
+    color: rgba(253, 57, 57, 0.726);
+    text-align: center;
+    padding: 10px;
+    border-radius: 36px;
+    font-weight: bold;
+}
+button:hover{
+  background-color: #ffa700;
+}
+/* Start home */
+#All{
+    background-image: url("../imges/home.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+/* End home */
+
+/* Resposive */
+
+@media (max-width: 1070px) {
+    #option{
+        display: none;
+    }
+}
+@media (max-width: 1010px) {
+    #Menu #menu{
+        display: block;
+        width: auto;
+    }
+}
+@media (max-width: 1010px) {
+    #Menu #menu{
+        display: block;
+        width: auto;
+    }
+}
+@media (max-width: 640px) {
+    #Menu #menu #dish2{
+        display: none;
+    }
+}
+@media (max-width: 506px) {
+    #Menu #menu #dish{
+        display: block;
+    }
+}
+@media(max-width: 584px){
+    #Chefs #Chef{
+        display: block;
+    }
+    #Chefs #Chef #Chef-1{
+        width: auto;
+    }
+    #Chefs #Chef #Chef-2{
+        width: auto;
+    }
+    #Our #services{
+        display: block;
+    }
+    #Our #services div{
+        width: auto;
+    }
+    #Reserve form div{
+        display: block;
+    }
+}
+@media (max-width: 338px) {
+    #About div{
+        width: auto;
+    }
+    #Chefs #Chef{
+        display: block;
+    }
+    #Chefs #Chef #Chef-1{
+        width: auto;
+    }
+    #Chefs #Chef #Chef-2{
+        width: auto;
+    }
+    #Our #services{
+        display: block;
+    }
+    #Our #services div{
+        width: auto;
+    }
+}
+/* Resposive */
+
+
