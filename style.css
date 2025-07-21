@@ -1,152 +1,210 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-style: italic;
 }
-.con{
-    padding-left: 35px;
-    padding-right: 35px;
+
+.con {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
-.t{
-    transition: 0.8s;
+
+@media (min-width: 768px) {
+    .con {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
-input{
-   background-color: #ffa5004f;
-   border-radius: 24px;
-   color: black;
-   padding: 5px;
-   margin: 5px;
-   outline: navajowhite;
-   transition: 0.5s;
+
+.t {
+    transition: all 0.3s ease;
 }
-input:hover{
-    background-color: darkgrey;
-    color: white;
-    border-radius: 2px;
-    margin: 6px;
-}
-textarea{
-    background-color: #ffa5004f;
+
+input, textarea, select {
+    background-color: rgba(255, 165, 0, 0.3);
     border-radius: 24px;
     color: black;
-    padding: 5px;
-    margin: 5px;
-    outline: navajowhite;
-    transition: 0.5s;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem 0;
+    outline: none;
+    border: 1px solid rgba(255, 165, 0, 0.5);
+    transition: all 0.3s ease;
+    width: 100%;
+    font-family: inherit;
 }
-textarea:hover{
+
+input:hover, textarea:hover, select:hover {
     background-color: darkgrey;
     color: white;
-    border-radius: 2px;
-    margin: 6px;
+    border-radius: 8px;
 }
-select{
-    background-color: #ffa5004f;
-    border-radius: 24px;
+
+input:focus, textarea:focus, select:focus {
+    background-color: rgba(255, 165, 0, 0.5);
     color: black;
-    padding: 5px;
-    margin: 5px;
-    outline: navajowhite;
-    transition: 0.5s;
+    border-color: #ffa700;
+    box-shadow: 0 0 0 2px rgba(255, 167, 0, 0.3);
 }
-label{
+
+label {
     color: #ffa700;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
 }
-label:hover{
+
+label:hover {
     color: rgb(139, 110, 12);
 }
-button{
-    background-color: #ffa5004f;
+
+button {
+    background-color: rgba(255, 165, 0, 0.3);
     color: rgba(253, 57, 57, 0.726);
     text-align: center;
-    padding: 10px;
+    padding: 0.5rem 1.5rem;
     border-radius: 36px;
     font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
 }
-button:hover{
-  background-color: #ffa700;
+
+button:hover {
+    background-color: #ffa700;
+    color: white;
+    transform: translateY(-2px);
 }
-/* Start home */
-#All{
-    background-image: url("../imges/home.jpg");
+
+/* Header */
+#All {
+    background-image: url("/imges/home.jpg");
     background-size: cover;
-    height: 100vh;
+    background-position: center;
+    min-height: 100vh;
+    background-attachment: fixed;
 }
-/* End home */
 
-/* Resposive */
+/* Menu Section */
+#Menu #menu {
+    width: 100%;
+    max-width: 800px;
+}
 
-@media (max-width: 1070px) {
-    #option{
-        display: none;
-    }
+#Menu #menu #dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
-@media (max-width: 1010px) {
-    #Menu #menu{
-        display: block;
-        width: auto;
-    }
-}
-@media (max-width: 1010px) {
-    #Menu #menu{
-        display: block;
-        width: auto;
-    }
-}
-@media (max-width: 640px) {
-    #Menu #menu #dish2{
-        display: none;
-    }
-}
-@media (max-width: 506px) {
-    #Menu #menu #dish{
-        display: block;
-    }
-}
-@media(max-width: 584px){
-    #Chefs #Chef{
-        display: block;
-    }
-    #Chefs #Chef #Chef-1{
-        width: auto;
-    }
-    #Chefs #Chef #Chef-2{
-        width: auto;
-    }
-    #Our #services{
-        display: block;
-    }
-    #Our #services div{
-        width: auto;
-    }
-    #Reserve form div{
-        display: block;
-    }
-}
-@media (max-width: 338px) {
-    #About div{
-        width: auto;
-    }
-    #Chefs #Chef{
-        display: block;
-    }
-    #Chefs #Chef #Chef-1{
-        width: auto;
-    }
-    #Chefs #Chef #Chef-2{
-        width: auto;
-    }
-    #Our #services{
-        display: block;
-    }
-    #Our #services div{
-        width: auto;
-    }
-}
-/* Resposive */
 
+#Menu #menu #dish img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
 
+/* Chefs Section */
+#Chefs #Chef {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+#Chefs #Chef > div {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Services Section */
+#Our #services {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+#Our #services > div {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+#Our #services > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries */
+@media (min-width: 640px) {
+    #Menu #menu #dish {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    #Reserve form div {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #Our #services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    #Chefs #Chef {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #Our #services {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #Menu #menu {
+        width: 80%;
+    }
+    
+    #Menu #menu #dish {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    #Our #services > div {
+        width: 100%;
+    }
+    
+    #Reserve form div {
+        flex-wrap: nowrap;
+    }
+    
+    #Menu #menu {
+        width: 60%;
+    }
+}
+
+/* Footer */
+footer {
+    padding: 2rem 1rem;
+}
+
+footer > div {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    footer > div {
+        flex-direction: row;
+    }
+}

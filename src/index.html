@@ -1,210 +1,225 @@
 <!doctype html>
-<html data-theme="cupcake" >
+<html data-theme="cupcake">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <link href="./output.css" rel="stylesheet">
-  <link href="../style.css" rel="stylesheet">
-  <title> MEAL </title>
+  <link href="./style.css" rel="stylesheet">
+  <title>MEAL</title>
 </head>
 <body>
+  
   <header id="All" class="con">
-    <nav class="relative pt-10">
-      <ul class="flex justify-around">
-        <li><a href="#" class="text-[30px] font-bold p-[10px] pl-[22px] pr-[22px] border-black border-4">M</a></li>
-        <li><a href="#" class="t text-[30px]"><i id="icon" class="fa-solid fa-bars fa-lg"></i></a></li>
+    <nav class="relative pt-6 md:pt-10">
+      <ul class="flex justify-between items-center px-4">
+        <li><a href="#" class="text-2xl md:text-[30px] font-bold p-2 md:p-[10px] md:pl-[22px] md:pr-[22px] border-black border-2 md:border-4">M</a></li>
+        <li>
+          <button id="menu-toggle" class="t text-2xl md:text-[30px] focus:outline-none">
+            <i id="icon" class="fa-solid fa-bars"></i>
+          </button>
+        </li>
       </ul>
-      <ul id="list" class="t hidden bg-black text-white h-fit p-4 fixed top-[10%] right-0 rounded-md">
-        <li><a  href="#"><i class="fa-solid fa-xmark" style="color: #ff0000;"></i></a></li>
-        <li><a class="t font-bold hover:bg-white hover:text-black hover:text-[20px]" href="#">Home</a></li>
-        <li><a class="t font-bold hover:bg-white hover:text-black hover:text-[20px]" href="#About">About Us</a></li>
-        <li><a class="t font-bold hover:bg-white hover:text-black hover:text-[20px]" href="#Menu">Our Menu</a></li>
-        <li><a class="t font-bold hover:bg-white hover:text-black hover:text-[20px]" href="#Reserve">Reserve A Table</a></li>
-        <li><a class="t font-bold hover:bg-white hover:text-black hover:text-[20px]" href="#Contact">Contact</a></li>
+      <ul id="list" class="t hidden bg-black text-white h-fit p-4 fixed top-[8%] md:top-[10%] right-0 rounded-md z-50 shadow-lg">
+        <li class="text-right mb-2">
+          <button id="menu-close" class="t font-bold hover:text-red-500 text-xl">
+            <i class="fa-solid fa-xmark text-red-500"></i>
+          </button>
+        </li>
+        <li><a class="t block py-2 font-bold hover:bg-white hover:text-black hover:text-[18px] md:hover:text-[20px]" href="#">Home</a></li>
+        <li><a class="t block py-2 font-bold hover:bg-white hover:text-black hover:text-[18px] md:hover:text-[20px]" href="#About">About Us</a></li>
+        <li><a class="t block py-2 font-bold hover:bg-white hover:text-black hover:text-[18px] md:hover:text-[20px]" href="#Menu">Our Menu</a></li>
+        <li><a class="t block py-2 font-bold hover:bg-white hover:text-black hover:text-[18px] md:hover:text-[20px]" href="#Reserve">Reserve A Table</a></li>
+        <li><a class="t block py-2 font-bold hover:bg-white hover:text-black hover:text-[18px] md:hover:text-[20px]" href="#Contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="text-center mt-[200px]">
-      <h1 class="text-black text-[70px] font-bold">Welcome to Meal</h1>
-      <button class="font-bold p-3 border-2 border-white border-solid t hover:text-white hover:bg-black">Reserve A Table</button>
+    <div class="text-center mt-[100px] md:mt-[200px] px-4">
+      <h1 class="text-black text-4xl md:text-[70px] font-bold leading-tight">Welcome to Meal</h1>
+      <button class="font-bold p-2 md:p-3 border-2 border-white border-solid t hover:text-white hover:bg-black mt-4 md:mt-6">
+        Reserve A Table
+      </button>
     </div>
   </header>
 
-  <section id="option" class="con pt-40"  data-aos="fade-up">
-
+  <section id="option" class="con pt-20 md:pt-40" data-aos="fade-up">
     <div id="Contect" class="text-center m-2">
-      <h1 class="font-bold text-[37px] ">Find your best food</h1>
-      <p class="font-bold text-[#2e2b2b]">Free Website Template For Restaurants Made by Colorlib</p>
+      <h1 class="font-bold text-2xl md:text-[37px]">Find your best food</h1>
+      <p class="font-bold text-[#2e2b2b] text-sm md:text-base">Free Website Template For Restaurants Made by Colorlib</p>
     </div>
 
-    <div id="option1" class=" flex gap-2  w-4/5 pt-32 mx-auto">
-      <img class="w-[350px] h-[400px]" src="../imges/img_1.jpg.webp"  loading="lazy" data-aos="zoom-in"  />
-      <div class="w-[600px] h-[400px] text-center">
+    <div id="option1" class="flex flex-col md:flex-row gap-6 w-full md:w-4/5 pt-12 md:pt-32 mx-auto">
+      <img class="w-full md:w-[350px] h-[300px] md:h-[400px] object-cover rounded-lg" src="../imges/img_1.jpg.webp" loading="lazy" data-aos="zoom-in">
+      <div class="w-full md:w-[600px] h-auto md:h-[400px] text-center flex flex-col justify-center">
         <p class="text-red-500">Vegies</p>
-        <h1 class="font-bold pt-2">Beef Empanadas</h1>
-        <p class="text-[28px] text-[#808080] pt-10 mx-auto">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-        <p class="font-bold pt-10 cursor-pointer hover:text-red-500">LEARN MORE</p>
+        <h1 class="font-bold pt-2 text-xl md:text-2xl">Beef Empanadas</h1>
+        <p class="text-lg md:text-[28px] text-[#808080] pt-6 md:pt-10 mx-auto">
+          Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+        </p>
+        <p class="font-bold pt-6 md:pt-10 cursor-pointer hover:text-red-500">LEARN MORE</p>
       </div>
-      <img class="w-[350px] h-[400px]" src="../imges/img_2.jpg.webp"  loading="lazy" data-aos="zoom-in"  />
+      <img class="w-full md:w-[350px] h-[300px] md:h-[400px] object-cover rounded-lg" src="../imges/img_2.jpg.webp" loading="lazy" data-aos="zoom-in">
     </div>
 
-    <div id="option2" class=" flex gap-2  w-4/5 pt-2 mx-auto">
-      <div class="w-[600px] h-[400px] text-center">
+    <div id="option2" class="flex flex-col md:flex-row gap-6 w-full md:w-4/5 pt-6 md:pt-12 mx-auto">
+      <div class="w-full md:w-[600px] h-auto md:h-[400px] text-center flex flex-col justify-center order-2 md:order-1">
         <p class="text-red-500">Food</p>
-        <h1 class="font-bold pt-2">Chicken Chimichurri Croquettes</h1>
-        <p class="text-[28px] text-[#808080] pt-10 mx-auto">
+        <h1 class="font-bold pt-2 text-xl md:text-2xl">Chicken Chimichurri Croquettes</h1>
+        <p class="text-lg md:text-[28px] text-[#808080] pt-6 md:pt-10 mx-auto">
           Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.
         </p>
-        <p class="font-bold pt-10 cursor-pointer hover:text-red-500">LEARN MORE</p>
+        <p class="font-bold pt-6 md:pt-10 cursor-pointer hover:text-red-500">LEARN MORE</p>
       </div>
-      <img class="w-[350px] h-[400px]" src="../imges/img_3.jpg.webp"  loading="lazy" data-aos="zoom-in" />
-      <div class="w-[600px] h-[400px] text-center">
+      <img class="w-full md:w-[350px] h-[300px] md:h-[400px] object-cover rounded-lg order-1 md:order-2" src="../imges/img_3.jpg.webp" loading="lazy" data-aos="zoom-in">
+      <div class="w-full md:w-[600px] h-auto md:h-[400px] text-center flex flex-col justify-center order-3">
         <p class="text-red-500">Food</p>
-        <h1 class="font-bold pt-2">Buttermilk Chicken Jibaritos</h1>
-        <p class="text-[28px] text-[#808080] pt-10 mx-auto">
+        <h1 class="font-bold pt-2 text-xl md:text-2xl">Buttermilk Chicken Jibaritos</h1>
+        <p class="text-lg md:text-[28px] text-[#808080] pt-6 md:pt-10 mx-auto">
           A small river named Duden flows by their place and supplies it with the necessary regelialia.
         </p>
-        <p class="font-bold pt-10 cursor-pointer hover:text-red-500">LEARN MORE</p>
+        <p class="font-bold pt-6 md:pt-10 cursor-pointer hover:text-red-500">LEARN MORE</p>
       </div>
     </div>
 
   </section>
 
-  <section id="About" class="con pt-40"  data-aos="fade-up">
-    <div class="w-1/2 mx-auto">
-      <h1 class="font-bold text-[37px] my-3">The Restaurant</h1>
+  <section id="About" class="con pt-20 md:pt-40" data-aos="fade-up">
+    <div class="w-full md:w-1/2 mx-auto px-4 md:px-0">
+      <h1 class="font-bold text-2xl md:text-[37px] my-3">The Restaurant</h1>
       <p id="about" class="font-bold text-[#00000042] tracking-[1px]">
-          Far far away, behind the word mountains,
-         far from the countries Vokalia and Consonantia, there live the blind texts. 
-         Separated they live in Bookmarksgrove right at the coast of the Semantics, 
+        Far far away, behind the word mountains,
+        far from the countries Vokalia and Consonantia, there live the blind texts. 
+        Separated they live in Bookmarksgrove right at the coast of the Semantics, 
       </p>
       <p class="font-bold text-[#00000042] pt-4 tracking-[1px]">                             
         a large language ocean.
         It is a paradisematic country, in which roasted parts of sentences fly into your mouth
       </p>
     </div>
-    <img class="pt-10" src="../imges/bg_hero.png.webp"  loading="lazy" data-aos="zoom-in" />
+    <img class="pt-10 w-full" src="../imges/bg_hero.png.webp" loading="lazy" data-aos="zoom-in">
   </section>
 
-  <section id="Chefs" class="con pt-40"  data-aos="fade-up">
+  <section id="Chefs" class="con pt-20 md:pt-40" data-aos="fade-up">
     <div class="text-center m-2">
-      <h1 class="font-bold text-[37px] ">Meet The Chefs</h1>
+      <h1 class="font-bold text-2xl md:text-[37px]">Meet The Chefs</h1>
     </div>
-    <div id="Chef" class="flex text-center justify-around gap-3">
-      <div id="Chef-1" class="w-[400px]">
+    <div id="Chef" class="flex flex-col md:flex-row text-center justify-center gap-8 md:gap-12 px-4 md:px-0">
+      <div id="Chef-1" class="w-full md:w-[400px]">
         <div class="text-center">
-          <img class=" rounded-full w-48 mx-auto" src="../imges/chef_1.jpg.webp" alt="img1"  loading="lazy" data-aos="zoom-in" >
-          <h1 class="font-bold ">Daniel Graham</h1>
+          <img class="rounded-full w-32 md:w-48 h-32 md:h-48 mx-auto object-cover" src="../imges/chef_1.jpg.webp" alt="Chef Daniel" loading="lazy" data-aos="zoom-in">
+          <h1 class="font-bold text-xl md:text-2xl mt-4">Daniel Graham</h1>
           <p class="text-[#00000042]">Master Chef</p>
         </div>
-        <p class=" pt-10 text-[#00000042]">
-            Far far away, behind the word mountains, 
-            far from the countries Vokalia and Consonantia, there live the blind texts.
-           Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+        <p class="pt-6 md:pt-10 text-[#00000042]">
+          Far far away, behind the word mountains, 
+          far from the countries Vokalia and Consonantia, there live the blind texts.
+          Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
         </p>
-        <p class="pt-10 m-auto text-[#00000042]">
+        <p class="pt-4 md:pt-6 text-[#00000042]">
           Separated they live in Bookmarksgrove right at the coast of the Semantics, 
           a large language ocean. It is a paradisematic country.
         </p>
-        <div  id="socital" class="pt-7">
-          <p class="inline mx-2 cursor-pointer text-orange-400 t hover:text-orange-600">
-            <i class="fa-brands pt-[7px] fa-facebook t cursor-pointer hover:text-blue-500 hover:text-[32px] "></i>
-          </p>
-          <p class="inline mx-2 cursor-pointer text-orange-400 t hover:text-orange-600">
-            <i class="fa-brands pt-[7px] fa-instagram t cursor-pointer fa-lg hover:text-pink-500 hover:text-[32px]"></i>
-          </p>
+        <div id="socital" class="pt-6 md:pt-7">
+          <a href="#" class="inline-block mx-2 cursor-pointer text-orange-400 t hover:text-orange-600 text-xl">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#" class="inline-block mx-2 cursor-pointer text-orange-400 t hover:text-orange-600 text-xl">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
         </div>
       </div>
-      <div id="Chef-2" class="w-[400px]">
+      <div id="Chef-2" class="w-full md:w-[400px] mt-12 md:mt-0">
         <div class="text-center">
-          <img class=" rounded-full w-48 mx-auto" src="../imges/chef_2.jpg.webp" alt="img1"  loading="lazy" data-aos="zoom-in" >
-          <h1 class="font-bold ">Nick Browning</h1>
+          <img class="rounded-full w-32 md:w-48 h-32 md:h-48 mx-auto object-cover" src="../imges/chef_2.jpg.webp" alt="Chef Nick" loading="lazy" data-aos="zoom-in">
+          <h1 class="font-bold text-xl md:text-2xl mt-4">Nick Browning</h1>
           <p class="text-[#00000042]">Master Chef</p>
         </div>
-        <p class=" pt-10 text-[#00000042]">
-            Far far away, behind the word mountains, 
-            far from the countries Vokalia and Consonantia, there live the blind texts.
-           Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+        <p class="pt-6 md:pt-10 text-[#00000042]">
+          Far far away, behind the word mountains, 
+          far from the countries Vokalia and Consonantia, there live the blind texts.
+          Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
         </p>
-        <p class="pt-10 m-auto text-[#00000042]">
+        <p class="pt-4 md:pt-6 text-[#00000042]">
           Separated they live in Bookmarksgrove right at the coast of the Semantics, 
           a large language ocean. It is a paradisematic country.
         </p>
-        <div  id="socital" class="pt-7">
-          <p class="inline mx-2 cursor-pointer text-orange-400 t hover:text-orange-600">
-            <i class="fa-brands pt-[7px] fa-facebook t cursor-pointer hover:text-blue-500 hover:text-[32px] "></i>
-          </p>
-          <p class="inline mx-2 cursor-pointer text-orange-400 t hover:text-orange-600">
-            <i class="fa-brands pt-[7px] fa-instagram t cursor-pointer fa-lg hover:text-pink-500 hover:text-[32px]"></i>
-          </p>
+        <div id="socital" class="pt-6 md:pt-7">
+          <a href="#" class="inline-block mx-2 cursor-pointer text-orange-400 t hover:text-orange-600 text-xl">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#" class="inline-block mx-2 cursor-pointer text-orange-400 t hover:text-orange-600 text-xl">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="Menu" class="con pt-40"  data-aos="fade-up">
+  <section id="Menu" class="con pt-20 md:pt-40" data-aos="fade-up">
     <div class="text-center m-2">
-      <h1 class="font-bold text-[37px] ">Menu</h1>
-      <p class="font-bold text-[#00000042]">Free Website Template For Restaurants Made by Colorlib</p>
+      <h1 class="font-bold text-2xl md:text-[37px]">Menu</h1>
+      <p class="font-bold text-[#00000042] text-sm md:text-base">Free Website Template For Restaurants Made by Colorlib</p>
     </div>
-    <ul class=" pt-8 flex gap-4 justify-center">
-      <li id="Breakfast"class="font-bold text-orange-400 t hover:text-orange-500 cursor-pointer">Breakfast</li>
-      <li id="Brunch"   class="font-bold text-orange-400 t hover:text-orange-500 cursor-pointer">Brunch</li>
-      <li id="Dinner"   class="font-bold text-orange-400 t hover:text-orange-500 cursor-pointer">Dinner</li>
+    <ul class="pt-6 md:pt-8 flex gap-4 justify-center flex-wrap">
+      <li id="Breakfast" class="font-bold text-orange-400 t hover:text-orange-500 cursor-pointer px-3 py-1">Breakfast</li>
+      <li id="Brunch" class="font-bold text-orange-400 t hover:text-orange-500 cursor-pointer px-3 py-1">Brunch</li>
+      <li id="Dinner" class="font-bold text-orange-400 t hover:text-orange-500 cursor-pointer px-3 py-1">Dinner</li>
     </ul>
-    <div id="menu" class="pt-7 flex justify-center flex-col gap-4 w-1/2 mx-auto">
-      <div id="dish" class="flex gap-2 my-4">
-        <img class="w-[20%] rounded-2xl"  src="../imges/img_1.jpg.webp"  alt="img"  loading="lazy" data-aos="zoom-in"  />
-        <div id="discrbtion" class="">
-          <div class="flex justify-between">
-            <h1 class="font-bold">Warm Spinach Dip & Chips</h1>
+    <div id="menu" class="pt-6 md:pt-7 flex justify-center flex-col gap-4 w-full md:w-1/2 mx-auto px-4 md:px-0">
+      <div id="dish" class="flex flex-col md:flex-row gap-4 my-4 items-center">
+        <img class="w-full md:w-[20%] h-auto rounded-2xl" src="../imges/img_1.jpg.webp" alt="Menu item" loading="lazy" data-aos="zoom-in">
+        <div id="discrbtion" class="w-full">
+          <div class="flex justify-between items-center">
+            <h1 class="font-bold text-lg md:text-xl">Warm Spinach Dip & Chips</h1>
             <p class="text-red-500 font-bold">$10.49</p>
           </div>
-          <p class="text-[20px] t text-[#00000042] hover:text-orange-400 cursor-pointer">Spinach and artichokes in a creamy cheese dip with warm tortilla chips & salsa.</p>
-
+          <p class="text-base md:text-[20px] t text-[#00000042] hover:text-orange-400 cursor-pointer mt-2">
+            Spinach and artichokes in a creamy cheese dip with warm tortilla chips & salsa.
+          </p>
         </div>
       </div>
-      <hr/>
-      <div id="dish2" class="flex gap-2 my-4">
-        <img class="w-[20%] rounded-2xl"  src="../imges/img_2.jpg.webp"  alt="img" />
-        <div id="discrbtion" class="">
-          <div class="flex justify-between">
-            <h1 class="font-bold">Key Wast Machos</h1>
+      <hr class="border-t border-gray-200">
+      
+      <div id="dish2" class="flex flex-col md:flex-row gap-4 my-4 items-center">
+        <img class="w-full md:w-[20%] h-auto rounded-2xl" src="../imges/img_2.jpg.webp" alt="Menu item">
+        <div id="discrbtion" class="w-full">
+          <div class="flex justify-between items-center">
+            <h1 class="font-bold text-lg md:text-xl">Key Wast Machos</h1>
             <p class="text-red-500 font-bold">$11.99</p>
           </div>
-          <p class="text-[20px] w-[548px] t text-[#00000042] hover:text-orange-400 cursor-pointer">
+          <p class="text-base md:text-[20px] t text-[#00000042] hover:text-orange-400 cursor-pointer mt-2">
             Crisp tortilla and plantain chips covered with lightly spiced ground beef, 
             melted cheese, pickled jalapeños, guacamole, sour cream and salsa.
           </p>
 
         </div>
       </div>
-      <hr/>
-      <div id="dish" class="flex gap-2 my-4">
-        <img class="w-[20%] rounded-2xl"  src="../imges/img_3.jpg.webp"  alt="img" />
-        <div id="discrbtion" class="">
-          <div class="flex justify-between">
-            <h1 class="font-bold">Crispy Onions Rings</h1>
+      <hr class="border-t border-gray-200">
+      
+      <div id="dish" class="flex flex-col md:flex-row gap-4 my-4 items-center">
+        <img class="w-full md:w-[20%] h-auto rounded-2xl" src="../imges/img_3.jpg.webp" alt="Menu item">
+        <div id="discrbtion" class="w-full">
+          <div class="flex justify-between items-center">
+            <h1 class="font-bold text-lg md:text-xl">Crispy Onions Rings</h1>
             <p class="text-red-500 font-bold">$13.49</p>
           </div>
-          <p class="text-[20px] t text-[#00000042] hover:text-orange-400 cursor-pointer">
+          <p class="text-base md:text-[20px] t text-[#00000042] hover:text-orange-400 cursor-pointer mt-2">
             A heaping mountain of rings, handmade with Panko breading and shredded coconut flakes.
           </p>
 
         </div>
       </div>
-      <hr/>
-      <div id="dish" class="flex gap-2 my-4">
-        <img class="w-[20%] rounded-2xl"  src="../imges/img_1.jpg.webp"  alt="img" />
-        <div id="discrbtion" class="">
-          <div class="flex justify-between">
-            <h1 class="font-bold">Crispy Onions Rings</h1>
+      <hr class="border-t border-gray-200">
+      
+      <div id="dish" class="flex flex-col md:flex-row gap-4 my-4 items-center">
+        <img class="w-full md:w-[20%] h-auto rounded-2xl" src="../imges/img_1.jpg.webp" alt="Menu item">
+        <div id="discrbtion" class="w-full">
+          <div class="flex justify-between items-center">
+            <h1 class="font-bold text-lg md:text-xl">Crispy Onions Rings</h1>
             <p class="text-red-500 font-bold">$13.49</p>
           </div>
-          <p class="text-[20px] t text-[#00000042] hover:text-orange-400 cursor-pointer">
+          <p class="text-base md:text-[20px] t text-[#00000042] hover:text-orange-400 cursor-pointer mt-2">
             A heaping mountain of rings, handmade with Panko breading and shredded coconut flakes.
           </p>
 
@@ -213,65 +228,81 @@
     </div>
   </section>
 
-  <section id="Our" class="con pt-40"  data-aos="fade-up">
+  <section id="Our" class="con pt-20 md:pt-40" data-aos="fade-up">
     <div class="text-center m-2">
-      <h1 class="font-bold text-[37px] ">Other Services</h1>
-      <p class="font-bold text-[#00000042]">Free Website Template For Restaurants Made by Colorlib</p>
+      <h1 class="font-bold text-2xl md:text-[37px]">Other Services</h1>
+      <p class="font-bold text-[#00000042] text-sm md:text-base">Free Website Template For Restaurants Made by Colorlib</p>
     </div>
-    <div id="services" class="flex flex-row justify-center gap-[10px] pt-10">
-      <div class="w-1/4 text-center text-black">
-        <p class="my-10 text-[40px]"><i class="fa-solid fa-utensils"></i></p>
-        <h2 class="font-bold my-4">Quality Cuisine</h2>
-        <p class="text-[#00000042] my-10">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+    <div id="services" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10 px-4 md:px-0">
+      <div class="text-center text-black p-6 rounded-lg hover:shadow-lg t">
+        <p class="my-4 md:my-6 text-3xl md:text-[40px] text-orange-400"><i class="fa-solid fa-utensils"></i></p>
+        <h2 class="font-bold my-2 md:my-4">Quality Cuisine</h2>
+        <p class="text-[#00000042] my-4 md:my-6">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        </p>
       </div>     
-      <div class="w-1/4 text-center text-black">
-        <p class="my-10 text-[40px]"><i class="fa-solid fa-bowl-food"></i></p>
-        <h2 class="font-bold my-4">Fresh Food</h2>
-        <p class="text-[#00000042] my-10">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      <div class="text-center text-black p-6 rounded-lg hover:shadow-lg t">
+        <p class="my-4 md:my-6 text-3xl md:text-[40px] text-orange-400"><i class="fa-solid fa-bowl-food"></i></p>
+        <h2 class="font-bold my-2 md:my-4">Fresh Food</h2>
+        <p class="text-[#00000042] my-4 md:my-6">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        </p>
       </div>
-      <div class="w-1/4 text-center text-black">
-        <p class="my-10 text-[40px]"><i class="fa-solid fa-bread-slice"></i></p>
-        <h2 class="font-bold my-4">Bread & Pancake</h2>
-        <p class="text-[#00000042] my-10">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      <div class="text-center text-black p-6 rounded-lg hover:shadow-lg t">
+        <p class="my-4 md:my-6 text-3xl md:text-[40px] text-orange-400"><i class="fa-solid fa-bread-slice"></i></p>
+        <h2 class="font-bold my-2 md:my-4">Bread & Pancake</h2>
+        <p class="text-[#00000042] my-4 md:my-6">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        </p>
       </div>
-    </div>
-    <div  id="services" class="flex flex-row justify-center gap-[10px] pt-1">
-      <div class="w-1/4 text-center text-black">
-        <p class="my-10 text-[40px]"><i class="fa-solid fa-champagne-glasses"></i></p>
-        <h2 class="font-bold my-4">Reserve Now</h2>
-        <p class="text-[#00000042] my-10">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      <div class="text-center text-black p-6 rounded-lg hover:shadow-lg t">
+        <p class="my-4 md:my-6 text-3xl md:text-[40px] text-orange-400"><i class="fa-solid fa-champagne-glasses"></i></p>
+        <h2 class="font-bold my-2 md:my-4">Reserve Now</h2>
+        <p class="text-[#00000042] my-4 md:my-6">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        </p>
       </div>     
-      <div class="w-1/4 text-center text-black">
-        <p class="my-10 text-[40px]"><i class="fa-solid fa-carrot"></i></p>
-        <h2 class="font-bold my-4">Fresh Vegies Salad</h2>
-        <p class="text-[#00000042] my-10">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      <div class="text-center text-black p-6 rounded-lg hover:shadow-lg t">
+        <p class="my-4 md:my-6 text-3xl md:text-[40px] text-orange-400"><i class="fa-solid fa-carrot"></i></p>
+        <h2 class="font-bold my-2 md:my-4">Fresh Vegies Salad</h2>
+        <p class="text-[#00000042] my-4 md:my-6">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        </p>
       </div>
-      <div class="w-1/4 text-center text-black">
-        <p class="my-10 text-[40px]"><i class="fa-solid fa-drumstick-bite"></i></p>
-        <h2 class="font-bold my-4">Whole Chicken</h2>
-        <p class="text-[#00000042] my-10">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      <div class="text-center text-black p-6 rounded-lg hover:shadow-lg t">
+        <p class="my-4 md:my-6 text-3xl md:text-[40px] text-orange-400"><i class="fa-solid fa-drumstick-bite"></i></p>
+        <h2 class="font-bold my-2 md:my-4">Whole Chicken</h2>
+        <p class="text-[#00000042] my-4 md:my-6">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        </p>
       </div>
     </div>
   </section>
 
-  <section id="Reserve" class="con pt-[120px] text-center"  data-aos="fade-up">
+  <section id="Reserve" class="con pt-12 md:pt-[120px] text-center" data-aos="fade-up">
     <div class="text-center m-2">
-      <h1 class="font-bold text-[37px]">Reservation</h1>
-      <p class="font-bold text-[#00000042]">Free Website Template For Restaurants Made by Colorlib</p>
+      <h1 class="font-bold text-2xl md:text-[37px]">Reservation</h1>
+      <p class="font-bold text-[#00000042] text-sm md:text-base">Free Website Template For Restaurants Made by Colorlib</p>
     </div>
-    <form class="pt-20 flex flex-col gap-5 w-2/3 mx-auto">
-      <div>
-        <label>Name</label>
-        <input type="text" />
-        <label>Email</label>
-        <input type="Email" />
-        <label>Phone</label>
-        <input type="text" />
-      </div>
-      <div class="flex justify-between">
+    <form class="pt-10 md:pt-20 flex flex-col gap-5 w-full md:w-2/3 mx-auto px-4 md:px-0">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div>
-          <label>Number of Persons</label>
-          <select name="persons" id="persons" class="form-control">
+          <label class="block">Name</label>
+          <input type="text" class="w-full">
+        </div>
+        <div>
+          <label class="block">Email</label>
+          <input type="Email" class="w-full">
+        </div>
+        <div>
+          <label class="block">Phone</label>
+          <input type="text" class="w-full">
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div>
+          <label class="block">Number of Persons</label>
+          <select name="persons" id="persons" class="w-full">
             <option value="">1 person</option>
             <option value="">2 persons</option>
             <option value="">3 persons</option>
@@ -280,77 +311,121 @@
           </select>
         </div>
         <div>
-          <label>Date</label>
-          <input type="text" />
+          <label class="block">Date</label>
+          <input type="date" class="w-full">
         </div>
         <div>
-          <label>Time</label>
-          <input type="text" />
+          <label class="block">Time</label>
+          <input type="time" class="w-full">
         </div>
       </div>
+      <button class="text-center t w-full md:w-2/3 mx-auto mt-6 md:mt-[30px] py-2 md:py-3">Reserve Now</button>
     </form>
     <button class="text-center t w-2/3 mx-auto mt-[30px] py-2"> Reserve Now</button>
   </section>
 
-  <section  id="Contact" class="con pt-[120px] text-center"  data-aos="fade-up">
+  <section id="Contact" class="con pt-12 md:pt-[120px] text-center" data-aos="fade-up">
     <div class="text-center m-2">
-      <h1 class="font-bold text-[40px]">Get In Touch</h1>
+      <h1 class="font-bold text-2xl md:text-[40px]">Get In Touch</h1>
     </div>
-    <form class="pt-20 flex flex-col gap-5 w-2/3 mx-auto">
-      <div>
-        <label>Name</label>
-        <input type="text" />
-        <label>Email</label>
-        <input type="Email" />
-        <label>Phone</label>
-        <input type="text" />
+    <form class="pt-10 md:pt-20 flex flex-col gap-5 w-full md:w-2/3 mx-auto px-4 md:px-0">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div>
+          <label class="block">Name</label>
+          <input type="text" class="w-full">
+        </div>
+        <div>
+          <label class="block">Email</label>
+          <input type="Email" class="w-full">
+        </div>
+        <div>
+          <label class="block">Phone</label>
+          <input type="text" class="w-full">
+        </div>
       </div>
-      <label>Message</label>
-      <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
-      <button>Send Your Message</button>
+      <div>
+        <label class="block">Message</label>
+        <textarea name="message" id="message" rows="5" class="w-full"></textarea>
+      </div>
+      <button class="w-full py-2 md:py-3">Send Your Message</button>
     </form>
   </section>
 
-  <footer class="relative mt-[120px] p-5 bg-gray-800"  data-aos="fade-up">
-    <div class="flex justify-between gap-5  mx-auto">
-        <div class="flex flex-col gap-5 font-bold w-3/4">
-            <h1 class="text-white text-[40px]">MEAL.</h1>
-            <p class="text-gray-400">
-              The Big Oxmox advised her not to do so, because there were thousands of bad Commas,
-               wild Question Marks and devious Semikoli, 
-              but the Little Blind Text didn’t listen.
-            </p>
+  <footer class="relative mt-12 md:mt-[120px] p-6 md:p-12 bg-gray-800" data-aos="fade-up">
+    <div class="flex flex-col md:flex-row justify-between gap-8 max-w-6xl mx-auto">
+      <div class="flex flex-col gap-4 w-full md:w-1/2">
+        <h1 class="text-white text-3xl md:text-[40px]">MEAL.</h1>
+        <p class="text-gray-400 text-sm md:text-base">
+          The Big Oxmox advised her not to do so, because there were thousands of bad Commas,
+          wild Question Marks and devious Semikoli, 
+          but the Little Blind Text didn't listen.
+        </p>
+      </div>
+      <div class="flex flex-col gap-4 w-full md:w-1/2">
+        <h1 class="text-white text-3xl md:text-[40px]">Get Notified</h1>
+        <p class="text-gray-400 text-sm md:text-base">
+          Quia quo qui sed odit. 
+          Quaerat voluptas autem necessitatibus vitae aut non alias sed quia. 
+          Ut itaque enim optio ut excepturi deserunt iusto porro.
+        </p>
+        <div class="flex flex-col mt-2">
+          <label class="text-orange-500 text-sm md:text-base mb-2">Enter your email address</label>
+          <div class="flex">
+            <input type="email" placeholder="username@site.com" class="flex-grow p-2 rounded-l focus:outline-none text-black">
+            <button class="bg-orange-400 text-white font-bold px-4 py-2 rounded-r hover:bg-orange-500 t">
+              Subscribe
+            </button>
+          </div>
         </div>
-        <div class="flex flex-col justify-between gap-5 font-bold w-3/4">
-            <h1 class="text-white text-[40px]">Get Notified</h1>
-            <p class="text-gray-400">
-                Quia quo qui sed odit. 
-                Quaerat voluptas autem necessitatibus vitae aut non alias sed quia. 
-                Ut itaque enim optio ut excepturi deserunt iusto porro.
-            </p>
-            <fieldset class="form-control w-80">
-                <label class="label">
-                  <span class="label-text text-orange-500">Enter your email address</span>
-                </label>
-                <div class="join">
-                  <input type="text" placeholder="username@site.com" class="input input-bordered join-item">
-                  <button class="btn btn-primary bg-orange-400  join-item">Subscribe</button>
-                </div>
-              </fieldset>
-        </div>
+      </div>
     </div>
-    <aside class="text-gray-400 text-center pt-[20px]">
-        <p>Copyright © {2024} - All right reserved by ACME Industries Ltd</p>
-    </aside> 
+    <div class="text-center mt-8 pt-8 border-t border-gray-700">
+      <p class="text-gray-400 text-sm">
+        Copyright © <span id="year"></span> - All right reserved by ACME Industries Ltd
+      </p>
+    </div>
   </footer>
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="../secript.js"></script>
+  <script  src="https://cdn.tailwindcss.com"></script>
   <script>
+    // Initialize AOS
     AOS.init({
-      duration: 1000, // مدة الحركة بالميلي ثانية
-      once: true, // تنفيذ الرسوم المتحركة مرة واحدة فقط
+      duration: 1000,
+      once: true,
     });
+
+    // Menu toggle functionality
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuClose = document.getElementById('menu-close');
+    const menuList = document.getElementById('list');
+    const menuIcon = document.getElementById('icon');
+
+    menuToggle.addEventListener('click', () => {
+      menuList.classList.toggle('hidden');
+      menuIcon.classList.toggle('fa-bars');
+      menuIcon.classList.toggle('fa-times');
+    });
+
+    menuClose.addEventListener('click', () => {
+      menuList.classList.add('hidden');
+      menuIcon.classList.remove('fa-times');
+      menuIcon.classList.add('fa-bars');
+    });
+
+    // Close menu when clicking on a link
+    const menuLinks = document.querySelectorAll('#list a:not(#menu-close)');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        menuList.classList.add('hidden');
+        menuIcon.classList.remove('fa-times');
+        menuIcon.classList.add('fa-bars');
+      });
+    });
+
+    // Update copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    
   </script>
   
 </body>
