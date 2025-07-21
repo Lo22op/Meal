@@ -83,7 +83,7 @@ button:hover {
 
 /* Header */
 #All {
-    background-image: url("/imges/home.jpg");
+    background-image: url("./imges/home.jpg");
     background-size: cover;
     background-position: center;
     min-height: 100vh;
