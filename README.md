@@ -8,7 +8,7 @@ This is a static website composed of multiple sections that help visitors easily
 
 ## 🔗 Live Demo
 
-[Click here to view the site]((https://lo22op.github.io/Meal/)]
+[Click here to view the site]https://lo22op.github.io/Meal/
 
 <!-- Replace the above link with your actual deployed site URL -->
 
