@@ -8,7 +8,7 @@ This is a static website composed of multiple sections that help visitors easily
 
 ## 🔗 Live Demo
 
-[Click here to view the site](https://your-live-site-link.com](https://lo22op.github.io/Meal/)
+[Click here to view the site]((https://lo22op.github.io/Meal/)]
 
 <!-- Replace the above link with your actual deployed site URL -->
 
@@ -36,4 +36,4 @@ This is a static website composed of multiple sections that help visitors easily
 
 If you'd like to share feedback or reach out, feel free to connect:
 
-- 🔗 LinkedIn: [linkedin.com/in/yourprofile]([https://linkedin.com/in/y](https://www.linkedin.com/in/sayed-ebrahem-a6541b261/))
+- 🔗 LinkedIn: ((https://www.linkedin.com/in/sayed-ebrahem-a6541b261/))
