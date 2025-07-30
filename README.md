@@ -1,6 +1,6 @@
-# 🌐 Glint - Personal Website
+# 🌐 Meal - Personal Website
 
-**Glint** is a responsive personal website built using **HTML5** and **Tailwind CSS**. It presents a clean and modern layout suitable for individuals or businesses who want to showcase their services and information professionally.
+**Meal** is a responsive personal website built using **HTML5** and **Tailwind CSS**. It presents a clean and modern layout suitable for individuals or businesses who want to showcase their services and information professionally.
 
 ## 🎯 Project Overview
 
